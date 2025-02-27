@@ -30,6 +30,7 @@ const DetailsProvider = ({ children }) => {
     const { name, value } = e.target;
     setData({ ...Data, [name]: value });
   };
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,6 +70,7 @@ const DetailsProvider = ({ children }) => {
         receiverAddress,
         parsedAmount,
         message
+        
       );
 
       setIsLoading(true);
